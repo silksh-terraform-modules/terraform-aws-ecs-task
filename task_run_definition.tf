@@ -1,4 +1,4 @@
-resource "aws_s3_bucket_object" "task_run_definition" {
+resource "aws_s3_object" "task_run_definition" {
   bucket  = var.task_run_definition_bucket
   key     = var.task_run_definition_file
   content = <<EOF
