@@ -62,5 +62,13 @@
   "protected": false,
   "masked": false,
   "environment_scope": "${env_scope}"
+},
+{
+  "variable_type": "env_var",
+  "key": "AWS_DOCKER_ENV_VARIABLES_BUCKET",
+  "value": "${env_variable_s3_bucket}",
+  "protected": false,
+  "masked": false,
+  "environment_scope": "${env_scope}"
 }
 ]

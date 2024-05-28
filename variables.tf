@@ -226,3 +226,8 @@ variable "task_run_definition_bucket" {
 variable "task_run_definition_file" {
   default = ""
 }
+
+variable "environment_bucket_id" {
+  type = string
+  description = "environmental s3 bucket ID - using for create gitlab variables template"
+}

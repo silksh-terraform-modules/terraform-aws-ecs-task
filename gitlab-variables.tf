@@ -12,6 +12,7 @@ resource "local_file" "this-gitlab-environment" {
       ecs_cluster_name          = var.cluster_name
       task_run_definition_bucket = var.task_run_definition_bucket
       task_run_definition_file = var.task_run_definition_file
+      env_variable_s3_bucket    = var.environment_bucket_id
 
     })
     filename = "./.terraform/${var.service_name}-${var.env_name}-gitlab-variables.json"
